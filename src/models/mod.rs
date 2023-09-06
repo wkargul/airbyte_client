@@ -347,4 +347,7 @@ pub use self::workspace_read_list::WorkspaceReadList;
 pub mod workspace_update;
 pub use self::workspace_update::WorkspaceUpdate;
 pub mod workspace_update_name;
+pub mod source_check_connection_request_body;
+pub use self::source_check_connection_request_body::SourceCheckConnectionRequestBody;
+
 pub use self::workspace_update_name::WorkspaceUpdateName;
