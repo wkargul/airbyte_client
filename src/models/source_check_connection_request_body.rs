@@ -4,13 +4,12 @@ pub struct SourceCheckConnectionRequestBody {
     pub source_definition_id: uuid::Uuid,
     /// The values required to configure the source. The schema for this must match the schema return by source_definition_specifications/get for the source.
     #[serde(
-    rename = "connectionConfiguration",
-    deserialize_with = "Option::deserialize"
+        rename = "connectionConfiguration",
+        deserialize_with = "Option::deserialize"
     )]
     pub connection_configuration: Option<serde_json::Value>,
     #[serde(rename = "workspaceId")]
     pub workspace_id: uuid::Uuid,
-
 }
 
 impl SourceCheckConnectionRequestBody {
